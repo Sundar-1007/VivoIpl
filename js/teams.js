@@ -48,7 +48,7 @@ for (var i = 0; i < playersDetails.length; i++) {
 
 `}
   function makethisinclick(res) {
-    window.open(`./playerDetails.html?name=${res}`, "_self")
+    window.open(`./playerdetails.html?name=${res}`, "_self")
   }
 
 }
