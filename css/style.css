@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-link {
+    color: rgb(50 161 218);
+    transition: .2s;
+}
+
+.navbar-nav .nav-link.active,
+.nav-link:hover {
+    color: rgb(34 49 127);
+    transform: scale(1.02);
+}
+
+/* section.main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5%;
+    position: relative;
+}
+
+.bg{
+    position: relative;
+}
+
+.bg::before{
+    position: absolute;
+    content: '';
+    background: url('../img/bg/bg1.jpg') fixed no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+} */
+
+header {
+    height: 100px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+    transition: .2s;
+}
+
+.navbar.pre-fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    top: -100%;
+    transition: .5s;
+}
+
+.navbar.fixed {
+    top: 0%;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.carousel img {
+    height: 70vh;
+    object-fit: cover;
+}
+
+#container_teams {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card {
+    width: 22%;
+    margin: 1.5%;
+    align-self: stretch;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    transition: .3s;
+    overflow: hidden;
+    height: 400px;
+}
+
+#index .card::before {
+    background: url('../img/bg/cardbg.avif');
+    background-size: cover;
+}
+
+.card::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index: -1;
+    opacity: 0.7;
+    transition: .5s;
+}
+
+.card:hover::before {
+    opacity: .9;
+}
+
+.card:hover {
+    color: white;
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.card-body {
+    flex: none;
+}
+
+.card-img-top {
+    height: auto;
+    width: 70%;
+    padding: 10%;
+    object-fit: contain;
+    margin: auto;
+}
+
+div#player_detail-img {
+    width: 20%;
+    margin: auto;
+}
+
+div#player_detail-img img {
+    height: 100%;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+
+#table-team,
+.player-detail {
+    position: relative;
+    border-radius: 10px;
+    color: white;
+}
+
+#table-team {
+    color: black;
+}
+
+#table-team::before,
+.player-detail::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.teams-card .card {
+    color: black;
+}
+
+.teams-card .card:hover {
+    color: white;
+}
+
+.teams-card .card::before {
+    background: url('../img/bg/cardbg3.jpg') center;
+    background-size: cover;
+    background-size: cover;
+}
+
+#table-team::before,
+.player-detail::before {
+    background: url('../img/bg/cardbg3.jpg') center no-repeat;
+    background-size: cover;
+    border: 1px solid;
+}
+
+#table-team::before {
+    background: url(https://img.freepik.com/free-vector/cricket-championship-with-ball-wicket-with-helmet-cricket-stadium-freehand-sketch-graphic-design-vector-illustration_460848-11912.jpg?size=626&ext=jpg&ga=GA1.1.580576877.1681725842&semt=ais)center no-repeat;
+    background-size: contain;
+}
+
+.ChennaiSuperKings .card p {
+    font-weight: 800;
+}
+
+
+.search-input {
+    position: relative;
+}
+
+.autocom-box {
+    position: absolute;
+    top: 100%;
+    list-style-type: none;
+    background: white;
+    width: 100%;
+    display: none;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.autocom-box li {
+    padding: 20px;
+}
+
+span.cap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: unset !important;
+    font-size: 20px;
+    padding: 0px 10px 3px;
+    color: white;
+    background: gold;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#table-team span.cap {
+    display: none;
+}
+
+table {
+    width: 100%;
+}
+
+td:nth-child(1) {
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+}
+
+td:nth-child(2) {
+    text-align: center;
+    display: block;
+    padding: 15px;
+}
+
+table img.team-page-icon {
+    height: 100px;
+}
+
+.teams {
+    margin: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: #22317f;
+}
+
+div#add-team {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 5%;
+    border-radius: 10px;
+    background: #000000c4;
+}
+
+footer {
+    background: #008bd2;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+}
+
+@media (max-width:767px) {
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel img {
+        height: auto;
+    }
+
+    div#add-team {
+        position: absolute;
+        transform: translate(-50%, -60%);
+        top: 60%;
+        left: 50%;
+        padding: 5%;
+        border-radius: 10px;
+        background: #000000c4;
+        width: 90%;
+    }
+
+    div#player_detail-img {
+        width: 75%;
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" src="" class="title-icon logo" type="image/icon type">
+    <title> Ipl</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- aos cdn -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- our css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    h1.teams1 {
+        color: white;
+    }
+
+    body {
+        background: url(https://wallpapercave.com/dwp1x/wp4789775.jpg) center no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    footer {
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- Navber comes here -->
+    </header>
+
+    <section class="main container">
+
+        <div id="add-team" data-aos="fade-up" data-aos-duration="700">
+            <form id="addteamform">
+                <div class="teamadd row gx-5 gy-4 justify-content-center">
+                    <div class="col-12 text-center">
+                        <h1 class="teams1">Add a Player</h1>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="inp1" class="form-control shadow-none" type="text" name="playerName"
+                            placeholder="Enter player name here.." required>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="inp2" class="form-control shadow-none" type="number" name="price" maxlength="2"
+                            placeholder="enter price for player.." required>
+                    </div>
+                    <div class="col-md-6">
+                        <select id="inp3" class="form-control shadow-none" type="text" name="isPlaying"
+                            placeholder="enter playing status here.." required>
+                            <option value="true">true</option>
+                            <option value="false">false</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <select id="inp4" class="form-control shadow-none" type="text" name="role" required>
+                            <option value="ALL-Rounder">ALL-Rounder</option>
+                            <option value="Batsman">Batsman</option>
+                            <option value="Bowler">Bowler</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="inp5" class="form-control shadow-none" type="text" name="playerimg"
+                            placeholder="Enter player image url.." required>
+                    </div>
+                    <div class="col-md-6">
+                        <select id="inp6" class="form-control" type="text" name="teamSelect" required>
+                        </select>
+                    </div>
+                    <div class="col text-center">
+                        <button type="submit" class="btn btn-outline-success">Add Player</button>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </section>
+    <footer>
+        <a href="mailto:viviiplt20.com">Contact us our vivo IPLT20.COM</a>
+    </footer>
+    <script src="js/titleandnavbar.js"></script>
+    <script src="js/addplayer.js"></script>
+</body>
+
+</html>
